@@ -53,7 +53,7 @@ GROUP BY
 	l.converted_currency;
 
 	
--- 4) Percentagem de artigos com garantia?
+-- 4) Porcentagem de artigos com garantia?
 
 -- 79.75% tem algum tipo de garantia 
 -- job_run = 2026-10-12 14:28:43.000
