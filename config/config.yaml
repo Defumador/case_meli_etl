@@ -1,0 +1,14 @@
+product:
+  query: 'S25 FE'
+  brand: 'Samsung' # opcional
+  condition: 'new' # fazer ser opcional      
+  category: 'CELLPHONES' # fazer ser opcional 
+search:
+  site: 'MLA'
+  page_size: 50
+  multi_get: 20  
+  max_products: 1000 # opcional
+  max_items: 1000 # opcional
+currency:
+  from: ARS
+  to: USD
