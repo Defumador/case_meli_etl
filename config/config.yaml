@@ -14,7 +14,7 @@ product:
   brand: 'Samsung'               # opcional
   condition: 'new'               # opcional
   category: 'CELLPHONES'         # opcional (domain_id = <site>-<category>)
-  attributes:                    # opcional (atributos a serem retornados) # Não implementado ainda
+  attributes:                    # opcional (atributos a serem retornados)
     - 'RAM' 
     - 'INTERNAL_MEMORY' 
     - 'COLOR'  

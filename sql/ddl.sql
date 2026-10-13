@@ -24,9 +24,7 @@ CREATE TABLE IF NOT EXISTS products (
     brand            VARCHAR(50),
     line             VARCHAR(50),
     model            VARCHAR(50),
-    ram              VARCHAR(20),
-    internal_memory  VARCHAR(20),
-    color            VARCHAR(50),
+    attributes       JSONB,
     quality_type     VARCHAR(20),
     job_run          TIMESTAMP    NOT NULL,
     PRIMARY KEY (product_id, job_run)
