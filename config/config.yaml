@@ -1,6 +1,6 @@
 api:
   base_url: 'https://api.mercadolibre.com'
-  timeout: 10                    # segundos por chamada
+  timeout: 10                    # segundos por chamada (recomendado 10s)
   retries: 3                     # tentativas em 429/5xx
   endpoints:
     token: '/oauth/token'
