@@ -1,14 +1,36 @@
+api:
+  base_url: 'https://api.mercadolibre.com'
+  timeout: 10                    # segundos por chamada
+  retries: 3                     # tentativas em 429/5xx
+  endpoints:
+    token: '/oauth/token'
+    products_search: '/products/search'
+    product_items: '/products/{product_id}/items'
+    currency_conversions: '/currency_conversions/search'
+    users: '/users'
+
 product:
-  query: 'S25 FE'
-  brand: 'Samsung' # opcional
-  condition: 'new' # fazer ser opcional      
-  category: 'CELLPHONES' # fazer ser opcional 
+  query: 'S25 FE'                # modelo(s): texto ou lista
+  brand: 'Samsung'               # opcional
+  condition: 'new'               # opcional
+  category: 'CELLPHONES'         # opcional (domain_id = <site>-<category>)
+  attributes:                    # opcional (atributos a serem retornados) # Não implementado ainda
+    - 'RAM' 
+    - 'INTERNAL_MEMORY' 
+    - 'COLOR'  
+
 search:
   site: 'MLA'
   page_size: 50
-  multi_get: 20  
-  max_products: 1000 # opcional
-  max_items: 1000 # opcional
+  max_offset: 100                # limite imposto pela API
+  multi_get: 20                  # sellers por chamada
+  max_products: 1000             # opcional
+  max_items: 1000                # opcional
+
 currency:
   from: ARS
   to: USD
+
+outliers:
+  iqr_factor: 1.5
+  

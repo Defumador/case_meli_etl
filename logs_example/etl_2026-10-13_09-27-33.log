@@ -1,0 +1,26 @@
+2026-10-13 09:27:33,346 | INFO | etl | Iniciando ETL | JOB_RUN=2026-10-13 09:27:33
+2026-10-13 09:27:33,348 | INFO | src.utils.config | Variáveis de ambiente carregadas de I:\mercado_livre\.env
+2026-10-13 09:27:33,350 | INFO | src.utils.config | Configuração carregada de I:\mercado_livre\config\config.yaml
+2026-10-13 09:27:34,014 | INFO | src.extract | [S25 FE] 50 buscados | 31 produtos acumulados (total na API: 240)
+2026-10-13 09:27:34,403 | INFO | src.extract | [S25 FE] 100 buscados | 31 produtos acumulados (total na API: 240)
+2026-10-13 09:27:34,794 | INFO | src.extract | [S25 FE] 150 buscados | 31 produtos acumulados (total na API: 240)
+2026-10-13 09:27:34,795 | WARNING | src.extract | Limite de paginação da API atingido (offset máximo 100)
+2026-10-13 09:27:35,142 | INFO | src.extract | Produto MLA78875374 sem publicações
+2026-10-13 09:27:35,495 | INFO | src.extract | Produto MLA64486693 sem publicações
+2026-10-13 09:27:36,716 | INFO | src.extract | Produto MLA66518769 sem publicações
+2026-10-13 09:27:37,213 | INFO | src.extract | Produto MLA74895166 sem publicações
+2026-10-13 09:27:37,356 | INFO | src.extract | Produto MLA64633652 sem publicações
+2026-10-13 09:27:37,504 | INFO | src.extract | Produto MLA60957824 sem publicações
+2026-10-13 09:27:37,856 | INFO | src.extract | Produto MLA79378382 sem publicações
+2026-10-13 09:27:38,847 | INFO | src.extract | Produto MLA79391555 sem publicações
+2026-10-13 09:27:40,022 | INFO | src.extract | Produto MLA79648837 sem publicações
+2026-10-13 09:27:40,172 | INFO | src.extract | Produto MLA64254171 sem publicações
+2026-10-13 09:27:40,172 | INFO | src.extract | Publicações extraídas: 152 | produtos consultados: 31 | sem publicações: 10
+2026-10-13 09:27:40,866 | INFO | src.extract | Sellers extraídos: 61 de 61 ids
+2026-10-13 09:27:41,218 | INFO | src.extract | Conversão ARS -> USD: 0.0006592
+2026-10-13 09:27:41,219 | INFO | src.transform | Transform: 61 sellers, 31 produtos, 152 publicações (1 outliers)
+2026-10-13 09:27:41,274 | INFO | src.load | sellers: 61 registros inseridos
+2026-10-13 09:27:41,277 | INFO | src.load | products: 31 registros inseridos
+2026-10-13 09:27:41,296 | INFO | src.load | listings: 152 registros inseridos
+2026-10-13 09:27:41,343 | INFO | src.utils.audit | Auditoria registrada: SUCCESS
+2026-10-13 09:27:41,343 | INFO | etl | ETL finalizado com sucesso em 8.0s
